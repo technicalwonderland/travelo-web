@@ -1,0 +1,36 @@
+<div *ngIf="trip">
+    <h2>Trip Details</h2>
+    <div>
+        <label>Name: {{trip.name | uppercase}} </label>
+        <label>Change name: <input [(ngModel)]="trip.name" placeholder="trip name"/></label>
+        <label>start date:
+            <input [(ngModel)]="trip.startDate" placeholder="start date"/>
+        </label>
+        <label>end date:
+            <input [(ngModel)]="trip.endDate" placeholder="end date"/>
+        </label>
+        <label>status:
+            <select [(ngModel)]="trip.tripStatus">
+                <option *ngFor="let o of statusOptions">
+                    {{o}}
+                </option>
+            </select>
+        </label>
+        <label>Destination:
+            <select [(ngModel)]="trip.destination">
+                <option *ngFor="let o of countries">
+                    {{o.name}}
+                </option>
+            </select>
+        </label>
+        <ul>
+            <li *ngFor="let customer of trip.customers">
+                {{customer.firstName}}, {{customer.lastName}}
+            </li>
+        </ul>
+    </div>
+    <button (click)="updateTrip()">Update trip data</button>
+</div>
+<h3>Add customer:</h3>
+<app-customer-search (customerSelected)="addCustomer($event)"></app-customer-search>
+<button mat-raised-button color="primary" (click)="goBack()">go back</button>

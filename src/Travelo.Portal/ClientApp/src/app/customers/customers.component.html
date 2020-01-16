@@ -1,0 +1,27 @@
+<mat-nav-list>
+    <h3 header>Customers:</h3>
+    <a mat-list-item *ngFor="let customer of customers" routerLink="/customers/{{customer.id}}">
+        <span>{{customer.fullName}}</span>
+        <mat-divider></mat-divider>
+    </a>
+</mat-nav-list>
+<mat-divider></mat-divider>
+<br>
+<mat-card class="creation-form-width">
+    <mat-card-header>
+        <mat-card-title>Customer</mat-card-title>
+        <mat-card-subtitle>Create customer</mat-card-subtitle>
+    </mat-card-header>
+    <form>
+        <mat-form-field class="full-width">
+            <input matInput placeholder="First name" #firstName>
+        </mat-form-field>
+
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Last name" #lastName>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" (click)="addCustomer(firstName.value, lastName.value); firstName.value=''; lastName.value=''">
+        Add customer
+    </button>
+</mat-card>

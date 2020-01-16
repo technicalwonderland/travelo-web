@@ -1,0 +1,22 @@
+<div *ngIf="customer">
+    <mat-card class="creation-form-width">
+        <mat-card-header>
+            <mat-card-title>{{customer.fullName | uppercase}}</mat-card-title>
+            <mat-card-subtitle>Edit customer</mat-card-subtitle>
+        </mat-card-header>
+        <form>
+            <mat-form-field class="full-width">
+                <input matInput placeholder="First name" [(ngModel)]="customer.firstName" name="firstName">
+            </mat-form-field>
+            <br>
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Last name" [(ngModel)]="customer.lastName" name="lastName">
+            </mat-form-field>
+        </form>
+        <button mat-raised-button color="primary"
+                (click)="updateCustomer();">
+            Update customer
+        </button>
+    </mat-card>
+</div>
+<button mat-raised-button color="primary" (click)="goBack()">go back</button>

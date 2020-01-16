@@ -1,0 +1,17 @@
+<mat-toolbar color="primary">
+    <h1>{{title}}</h1>
+</mat-toolbar>
+<nav mat-tab-nav-bar color="accent" backgroundColor="primary">
+    <a mat-tab-link
+       routerLink="/customers">
+        Customers
+    </a>
+    <a mat-tab-link
+       routerLink="/trips">
+        Trips
+    </a>
+</nav>
+<div class="basic-container">
+    <router-outlet></router-outlet>
+</div>
+<app-messages></app-messages>

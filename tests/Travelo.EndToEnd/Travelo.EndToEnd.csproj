@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="3.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="Moq" Version="4.13.1" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Travelo.API\Travelo.API.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Always</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <_UnmanagedRegistrationCache Remove="obj\Travelo.EndToEnd.csproj.UnmanagedRegistration.cache" />
+    <_UnmanagedRegistrationCache Remove="obj\Travelo.EndToEnd.csproj.UnmanagedRegistration.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.csproj.ResolveComReference.cache" />
+    <_ResolveComReferenceCache Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.csproj.ResolveComReference.cache" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.dll" />
+    <IntermediateAssembly Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.pdb" />
+    <_DebugSymbolsIntermediatePath Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.pdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.dll" />
+    <_DeploymentManifestEntryPoint Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ApplicationManifest Remove="obj\Debug\netcoreapp3.1\Native.Travelo.EndToEnd.manifest" />
+    <ApplicationManifest Remove="obj\Debug\netcoreapp3.1\Native.Travelo.EndToEnd.manifest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DeployManifest Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.application" />
+    <DeployManifest Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.application" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ClsidMap Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.clsidmap" />
+    <ClsidMap Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.clsidmap" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <RegFreeComManifest Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.X.manifest" />
+    <RegFreeComManifest Remove="obj\Debug\netcoreapp3.1\Travelo.EndToEnd.X.manifest" />
+  </ItemGroup>
+
+</Project>

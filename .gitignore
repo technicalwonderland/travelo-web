@@ -1,0 +1,32 @@
+
+# Created by https://www.gitignore.io/api/rider,dotnetcore
+# Edit at https://www.gitignore.io/?templates=rider,dotnetcore
+
+### DotnetCore ###
+# .NET Core build folders
+/src/Travelo.API/bin
+/src/Travelo.API/obj
+/src/Travelo.Core/bin
+/src/Travelo.Core/obj
+/src/Travelo.DataStore/bin
+/src/Travelo.DataStore/obj
+/src/Travelo.Core.Domain/bin
+/src/Travelo.Core.Domain/obj
+/src/Travelo.Portal/bin
+/src/Travelo.Portal/obj
+/tests/Travelo.UnitTests/bin
+/tests/Travelo.UnitTests/obj
+/tests/Travelo.EndToEnd/bin
+/tests/Travelo.EndToEnd/obj
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+
+### Rider ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+.idea/
+.vs/
